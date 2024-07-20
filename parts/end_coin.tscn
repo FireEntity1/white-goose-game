@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://co1h1e5n77dwi"]
+
+[ext_resource type="Texture2D" uid="uid://j70q63s7lbyk" path="res://sprites/endCoin.png" id="1_qtpim"]
+[ext_resource type="Script" path="res://scripts/endCoin.gd" id="2_c5x0x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4d23s"]
+
+[node name="endCoin" type="Node2D"]
+scale = Vector2(3.97333, 3.97333)
+
+[node name="EndCoin" type="Sprite2D" parent="."]
+position = Vector2(1, 0)
+texture = ExtResource("1_qtpim")
+
+[node name="coinCol" type="Area2D" parent="."]
+position = Vector2(0.968918, 0)
+scale = Vector2(0.823504, 0.823504)
+script = ExtResource("2_c5x0x")
+
+[node name="coinCol" type="CollisionShape2D" parent="coinCol"]
+scale = Vector2(1, 1)
+shape = SubResource("CircleShape2D_4d23s")
+
+[connection signal="body_entered" from="coinCol" to="coinCol" method="_on_body_entered"]

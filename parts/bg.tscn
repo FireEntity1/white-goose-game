@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf1a8gpljecgs"]
+
+[ext_resource type="Texture2D" uid="uid://dq2oytu6imcg4" path="res://sprites/levelBG.png" id="1_ej86f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hfhmw"]
+size = Vector2(1167, 52)
+
+[node name="bg" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(579, 326)
+scale = Vector2(7.40115, 7.40115)
+texture = ExtResource("1_ej86f")
+
+[node name="edge" type="StaticBody2D" parent="BG"]
+position = Vector2(-78.2311, -44.0472)
+scale = Vector2(0.135114, 0.135114)
+
+[node name="edge1" type="CollisionShape2D" parent="BG/edge"]
+position = Vector2(575, 648)
+shape = SubResource("RectangleShape2D_hfhmw")
+
+[node name="edge2" type="CollisionShape2D" parent="BG/edge"]
+position = Vector2(583, 3)
+shape = SubResource("RectangleShape2D_hfhmw")
+
+[node name="edge3" type="CollisionShape2D" parent="BG/edge"]
+position = Vector2(0, 227)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_hfhmw")
+
+[node name="edge4" type="CollisionShape2D" parent="BG/edge"]
+position = Vector2(1162, 227)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_hfhmw")

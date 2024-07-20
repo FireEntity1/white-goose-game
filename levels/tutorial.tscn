@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7t3lyg5wku4u"]
+
+[ext_resource type="PackedScene" uid="uid://bf1a8gpljecgs" path="res://parts/bg.tscn" id="1_hx474"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="2_r7dcq"]
+[ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="3_8a0ri"]
+[ext_resource type="PackedScene" uid="uid://cw5nqs1kyqxps" path="res://parts/platform_1.tscn" id="4_dre88"]
+
+[node name="tutorial" type="Node2D"]
+
+[node name="bg" parent="." instance=ExtResource("1_hx474")]
+position = Vector2(-5, 1)
+
+[node name="endCoin" parent="." instance=ExtResource("2_r7dcq")]
+position = Vector2(1021, 236)
+
+[node name="player" parent="." instance=ExtResource("3_8a0ri")]
+position = Vector2(97, 137)
+
+[node name="platform1" parent="." instance=ExtResource("4_dre88")]
+position = Vector2(108, 231)
+
+[node name="platform2" parent="." instance=ExtResource("4_dre88")]
+position = Vector2(368, 350)
+
+[node name="platform3" parent="." instance=ExtResource("4_dre88")]
+position = Vector2(771, 400)
+
+[node name="platform4" parent="." instance=ExtResource("4_dre88")]
+position = Vector2(1029, 320)

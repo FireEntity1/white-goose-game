@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://caaxhahsiepie"]
+
+[ext_resource type="PackedScene" uid="uid://bf1a8gpljecgs" path="res://parts/bg.tscn" id="1_ds13n"]
+[ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_i5x18"]
+[ext_resource type="PackedScene" uid="uid://cw5nqs1kyqxps" path="res://parts/platform_1.tscn" id="3_hg1ix"]
+[ext_resource type="PackedScene" uid="uid://s2prmx6o0rdp" path="res://parts/spike.tscn" id="4_l5l2c"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="5_hcr8s"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="bg" parent="." instance=ExtResource("1_ds13n")]
+position = Vector2(-5, 1)
+
+[node name="player" parent="." instance=ExtResource("2_i5x18")]
+position = Vector2(1071, 572)
+
+[node name="platform1" parent="." instance=ExtResource("3_hg1ix")]
+position = Vector2(911, 522)
+rotation = 0.590817
+
+[node name="platform2" parent="." instance=ExtResource("3_hg1ix")]
+position = Vector2(803, 451)
+rotation = 0.590817
+
+[node name="platform3" parent="." instance=ExtResource("3_hg1ix")]
+position = Vector2(417, 279)
+rotation = -0.970002
+
+[node name="platform6" parent="." instance=ExtResource("3_hg1ix")]
+position = Vector2(344, 388)
+rotation = -0.970002
+
+[node name="platform7" parent="." instance=ExtResource("3_hg1ix")]
+position = Vector2(273, 496)
+rotation = -0.970002
+
+[node name="platform4" parent="." instance=ExtResource("3_hg1ix")]
+position = Vector2(707, 292)
+rotation = 0.638587
+
+[node name="platform5" parent="." instance=ExtResource("3_hg1ix")]
+position = Vector2(549, 206)
+
+[node name="Spike" parent="." instance=ExtResource("4_l5l2c")]
+position = Vector2(52, 596)
+
+[node name="Spike2" parent="." instance=ExtResource("4_l5l2c")]
+position = Vector2(878, 596)
+
+[node name="Spike3" parent="." instance=ExtResource("4_l5l2c")]
+position = Vector2(808, 596)
+
+[node name="platform8" parent="." instance=ExtResource("3_hg1ix")]
+position = Vector2(558, 543)
+
+[node name="platform9" parent="." instance=ExtResource("3_hg1ix")]
+position = Vector2(659, 462)
+
+[node name="platform10" parent="." instance=ExtResource("3_hg1ix")]
+position = Vector2(452, 412)
+
+[node name="endCoin" parent="." instance=ExtResource("5_hcr8s")]
+position = Vector2(448, 348)

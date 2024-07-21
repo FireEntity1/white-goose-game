@@ -15,6 +15,10 @@ run/main_scene="res://levels/tutorial.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 boot_splash/show_image=false
 
+[autoload]
+
+Spike="*res://scripts/spike.gd"
+
 [display]
 
 window/stretch/mode="canvas_items"

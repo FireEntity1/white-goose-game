@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://dl01jf0ughvfe"]
+
+[ext_resource type="PackedScene" uid="uid://bf1a8gpljecgs" path="res://parts/bg.tscn" id="1_65jqp"]
+[ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_tbpmo"]
+[ext_resource type="PackedScene" uid="uid://cw5nqs1kyqxps" path="res://parts/platform_1.tscn" id="3_fyrro"]
+[ext_resource type="PackedScene" uid="uid://s2prmx6o0rdp" path="res://parts/spike.tscn" id="4_wuqbt"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="5_rw4vy"]
+
+[node name="level3" type="Node2D"]
+
+[node name="bg" parent="." instance=ExtResource("1_65jqp")]
+position = Vector2(-5, 1)
+
+[node name="player" parent="." instance=ExtResource("2_tbpmo")]
+position = Vector2(1067, 88)
+
+[node name="platform1" parent="." instance=ExtResource("3_fyrro")]
+position = Vector2(1054, 155)
+
+[node name="platform2" parent="." instance=ExtResource("3_fyrro")]
+position = Vector2(887, 255)
+
+[node name="Spike" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(936, 206)
+
+[node name="platform3" parent="." instance=ExtResource("3_fyrro")]
+position = Vector2(741, 362)
+
+[node name="Spike2" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(790, 313)
+
+[node name="platform4" parent="." instance=ExtResource("3_fyrro")]
+position = Vector2(591, 471)
+
+[node name="Spike3" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(640, 422)
+
+[node name="Spike4" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(1090, 596)
+
+[node name="Spike5" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(1024, 596)
+
+[node name="Spike6" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(957, 596)
+
+[node name="Spike7" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(885, 596)
+
+[node name="Spike8" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(813, 596)
+
+[node name="Spike9" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(745, 596)
+
+[node name="Spike10" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(679, 596)
+
+[node name="Spike11" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(396, 596)
+
+[node name="Spike12" parent="." instance=ExtResource("4_wuqbt")]
+position = Vector2(232, 596)
+
+[node name="endCoin" parent="." instance=ExtResource("5_rw4vy")]
+position = Vector2(73, 543)

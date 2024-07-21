@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://o2qj6wp00k86"]
+
+[ext_resource type="PackedScene" uid="uid://bf1a8gpljecgs" path="res://parts/bg.tscn" id="1_b1jeu"]
+[ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_lyogt"]
+[ext_resource type="PackedScene" uid="uid://s2prmx6o0rdp" path="res://parts/spike.tscn" id="3_xgtja"]
+[ext_resource type="PackedScene" uid="uid://cw5nqs1kyqxps" path="res://parts/platform_1.tscn" id="4_quqvl"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="5_kox3k"]
+
+[node name="level5" type="Node2D"]
+
+[node name="bg" parent="." instance=ExtResource("1_b1jeu")]
+position = Vector2(-5, 1)
+
+[node name="player" parent="." instance=ExtResource("2_lyogt")]
+position = Vector2(1072, 574)
+
+[node name="Spike" parent="." instance=ExtResource("3_xgtja")]
+position = Vector2(928, 596)
+
+[node name="Spike2" parent="." instance=ExtResource("3_xgtja")]
+position = Vector2(704, 596)
+
+[node name="Spike3" parent="." instance=ExtResource("3_xgtja")]
+position = Vector2(513, 596)
+
+[node name="Spike4" parent="." instance=ExtResource("3_xgtja")]
+position = Vector2(476, 347)
+
+[node name="Spike5" parent="." instance=ExtResource("3_xgtja")]
+position = Vector2(608, 347)
+
+[node name="Spike6" parent="." instance=ExtResource("3_xgtja")]
+position = Vector2(744, 347)
+
+[node name="Spike7" parent="." instance=ExtResource("3_xgtja")]
+position = Vector2(884, 347)
+
+[node name="platform1" parent="." instance=ExtResource("4_quqvl")]
+position = Vector2(88, 532)
+
+[node name="platform2" parent="." instance=ExtResource("4_quqvl")]
+position = Vector2(288, 476)
+
+[node name="platform3" parent="." instance=ExtResource("4_quqvl")]
+position = Vector2(440, 395)
+
+[node name="platform4" parent="." instance=ExtResource("4_quqvl")]
+position = Vector2(571, 395)
+
+[node name="platform5" parent="." instance=ExtResource("4_quqvl")]
+position = Vector2(706, 395)
+
+[node name="platform6" parent="." instance=ExtResource("4_quqvl")]
+position = Vector2(844, 395)
+
+[node name="endCoin" parent="." instance=ExtResource("5_kox3k")]
+position = Vector2(1088, 349)

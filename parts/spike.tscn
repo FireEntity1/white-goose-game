@@ -10,7 +10,7 @@ script = ExtResource("1_hsl0d")
 [node name="area" type="Area2D" parent="."]
 
 [node name="collision" type="CollisionPolygon2D" parent="area"]
-polygon = PackedVector2Array(8, 8, -8, 8, 0, -8)
+polygon = PackedVector2Array(4.07826, 8.15652, -4.95217, 8.15652, 0, -8)
 
 [node name="sprite" type="Sprite2D" parent="area"]
 texture = ExtResource("1_bvknb")

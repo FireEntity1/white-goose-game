@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbafb5i7kmlpe"]
+[gd_scene load_steps=6 format=3 uid="uid://dbafb5i7kmlpe"]
 
 [ext_resource type="PackedScene" uid="uid://cqjeo02m2p5ry" path="res://parts/bg2.tscn" id="1_2k42s"]
 [ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_iefe0"]
 [ext_resource type="PackedScene" uid="uid://q68h81as2qqj" path="res://parts/platform_2.tscn" id="3_tfpim"]
 [ext_resource type="PackedScene" uid="uid://s2prmx6o0rdp" path="res://parts/spike.tscn" id="4_pya6g"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="5_aebd2"]
 
 [node name="17" type="Node2D"]
 
@@ -17,10 +18,10 @@ position = Vector2(1099, 587)
 position = Vector2(983, 484)
 
 [node name="platform2" parent="." instance=ExtResource("3_tfpim")]
-position = Vector2(949, 325)
+position = Vector2(954, 325)
 
 [node name="platform3" parent="." instance=ExtResource("3_tfpim")]
-position = Vector2(977, 180)
+position = Vector2(924, 181)
 
 [node name="platform4" parent="." instance=ExtResource("3_tfpim")]
 position = Vector2(729, 177)
@@ -38,7 +39,7 @@ position = Vector2(487, 517)
 position = Vector2(135, 455)
 
 [node name="platform10" parent="." instance=ExtResource("3_tfpim")]
-position = Vector2(312, 297)
+position = Vector2(323, 231)
 rotation = 1.44107
 
 [node name="Spike" parent="." instance=ExtResource("4_pya6g")]
@@ -84,9 +85,48 @@ position = Vector2(134, 605)
 position = Vector2(67, 605)
 
 [node name="Spike15" parent="." instance=ExtResource("4_pya6g")]
-position = Vector2(357, 264)
+position = Vector2(368, 198)
 rotation = 1.42564
 
 [node name="Spike16" parent="." instance=ExtResource("4_pya6g")]
-position = Vector2(365, 324)
+position = Vector2(376, 258)
 rotation = 1.42564
+
+[node name="platform13" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(304, 104)
+rotation = 1.44107
+
+[node name="Spike21" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(349, 71)
+rotation = 1.42564
+
+[node name="Spike22" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(357, 131)
+rotation = 1.42564
+
+[node name="platform11" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(782, 287)
+rotation = 1.44107
+
+[node name="Spike17" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(827, 254)
+rotation = 1.42564
+
+[node name="Spike18" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(835, 314)
+rotation = 1.42564
+
+[node name="platform12" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(804, 471)
+rotation = 1.44107
+
+[node name="Spike19" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(849, 438)
+rotation = 1.42564
+
+[node name="Spike20" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(857, 498)
+rotation = 1.42564
+
+[node name="endCoin" parent="." instance=ExtResource("5_aebd2")]
+position = Vector2(137, 379)

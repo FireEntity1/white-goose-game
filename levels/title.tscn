@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://dnabijsy4nmt8"]
+
+[ext_resource type="Texture2D" uid="uid://dj0awwhowrg56" path="res://sprites/title.png" id="1_01xma"]
+[ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_x5kkq"]
+[ext_resource type="FontFile" uid="uid://dfsgaxe136syp" path="res://sprites/Silkscreen-Regular.ttf" id="3_uoewp"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="4_op0ov"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7d34b"]
+size = Vector2(1167, 52)
+
+[sub_resource type="Theme" id="Theme_sc5c6"]
+default_font = ExtResource("3_uoewp")
+
+[node name="title" type="Node2D"]
+
+[node name="titleBG" type="Sprite2D" parent="."]
+position = Vector2(587, 337)
+scale = Vector2(8.39375, 8.53333)
+texture = ExtResource("1_01xma")
+
+[node name="edge" type="StaticBody2D" parent="titleBG"]
+position = Vector2(-75.4133, -43.7109)
+scale = Vector2(0.123724, 0.124248)
+
+[node name="edge1" type="CollisionShape2D" parent="titleBG/edge"]
+position = Vector2(583.53, 670.597)
+shape = SubResource("RectangleShape2D_7d34b")
+
+[node name="edge2" type="CollisionShape2D" parent="titleBG/edge"]
+position = Vector2(584.493, 6.60228)
+shape = SubResource("RectangleShape2D_7d34b")
+
+[node name="edge3" type="CollisionShape2D" parent="titleBG/edge"]
+position = Vector2(19.2584, 225.419)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_7d34b")
+
+[node name="edge4" type="CollisionShape2D" parent="titleBG/edge"]
+position = Vector2(1180.54, 227.305)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_7d34b")
+
+[node name="player" parent="." instance=ExtResource("2_x5kkq")]
+position = Vector2(1099, 600)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 38.0
+offset_top = 35.0
+offset_right = 212.0
+offset_bottom = 58.0
+scale = Vector2(6.12237, 6.12237)
+theme = SubResource("Theme_sc5c6")
+text = "White goose game"
+
+[node name="endCoin" parent="." instance=ExtResource("4_op0ov")]
+position = Vector2(558, 480)

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dq6cx72lswea2"]
+[gd_scene load_steps=6 format=3 uid="uid://dq6cx72lswea2"]
 
 [ext_resource type="PackedScene" uid="uid://bf1a8gpljecgs" path="res://parts/bg.tscn" id="1_3ae5r"]
 [ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_7y6ef"]
 [ext_resource type="PackedScene" uid="uid://cw5nqs1kyqxps" path="res://parts/platform_1.tscn" id="3_bsu1m"]
 [ext_resource type="PackedScene" uid="uid://s2prmx6o0rdp" path="res://parts/spike.tscn" id="4_ai5kx"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="5_dscoo"]
 
 [node name="8" type="Node2D"]
 
@@ -86,3 +87,6 @@ rotation = 4.71239
 
 [node name="platform9" parent="." instance=ExtResource("3_bsu1m")]
 position = Vector2(1010, 438)
+
+[node name="endCoin" parent="." instance=ExtResource("5_dscoo")]
+position = Vector2(996, 363)

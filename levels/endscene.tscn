@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://cw5jlxsv4qgkk"]
+
+[ext_resource type="PackedScene" uid="uid://bf1a8gpljecgs" path="res://parts/bg.tscn" id="1_2y0vk"]
+[ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_0jv8a"]
+[ext_resource type="PackedScene" uid="uid://cw5nqs1kyqxps" path="res://parts/platform_1.tscn" id="3_yv53p"]
+[ext_resource type="FontFile" uid="uid://dfsgaxe136syp" path="res://sprites/Silkscreen-Regular.ttf" id="4_4gswh"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="5_3fhri"]
+
+[sub_resource type="Theme" id="Theme_gsev8"]
+default_font = ExtResource("4_4gswh")
+
+[node name="end" type="Node2D"]
+
+[node name="bg" parent="." instance=ExtResource("1_2y0vk")]
+position = Vector2(-5, 1)
+
+[node name="player" parent="." instance=ExtResource("2_0jv8a")]
+position = Vector2(566, 281)
+
+[node name="platform1" parent="." instance=ExtResource("3_yv53p")]
+position = Vector2(572, 374)
+
+[node name="platform2" parent="." instance=ExtResource("3_yv53p")]
+position = Vector2(232, 574)
+
+[node name="platform3" parent="." instance=ExtResource("3_yv53p")]
+position = Vector2(927, 582)
+
+[node name="end" type="Label" parent="."]
+offset_left = 74.0
+offset_top = 89.0
+offset_right = 328.0
+offset_bottom = 112.0
+scale = Vector2(3.99583, 3.99583)
+theme = SubResource("Theme_gsev8")
+text = "thank you for playing!!!"
+
+[node name="endCoin" parent="." instance=ExtResource("5_3fhri")]
+position = Vector2(576, 542)

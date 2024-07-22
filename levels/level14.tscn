@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgunmk52dkawd"]
+[gd_scene load_steps=6 format=3 uid="uid://bgunmk52dkawd"]
 
 [ext_resource type="PackedScene" uid="uid://cqjeo02m2p5ry" path="res://parts/bg2.tscn" id="1_6koxy"]
 [ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_s65k4"]
 [ext_resource type="PackedScene" uid="uid://q68h81as2qqj" path="res://parts/platform_2.tscn" id="3_7fci5"]
 [ext_resource type="PackedScene" uid="uid://s2prmx6o0rdp" path="res://parts/spike.tscn" id="4_n7e4o"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="5_kts4n"]
 
 [node name="14" type="Node2D"]
 
@@ -83,3 +84,6 @@ position = Vector2(1039, 604)
 
 [node name="Spike15" parent="." instance=ExtResource("4_n7e4o")]
 position = Vector2(1105, 604)
+
+[node name="endCoin" parent="." instance=ExtResource("5_kts4n")]
+position = Vector2(477, 358)

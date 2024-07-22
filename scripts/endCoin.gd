@@ -13,6 +13,7 @@ func _process(delta):
 func _on_body_entered(body):
 	if body is CharacterBody2D:
 		match currentScene:
+			"title": get_tree().change_scene_to_file("res://levels/tutorial.tscn")
 			"tutorial": get_tree().change_scene_to_file("res://levels/level1.tscn")
 			"1": get_tree().change_scene_to_file("res://levels/level2.tscn")
 			"2": get_tree().change_scene_to_file("res://levels/level3.tscn")
@@ -29,3 +30,7 @@ func _on_body_entered(body):
 			"13": get_tree().change_scene_to_file("res://levels/level14.tscn")
 			"14": get_tree().change_scene_to_file("res://levels/level15.tscn")
 			"15": get_tree().change_scene_to_file("res://levels/level16.tscn")
+			"16": get_tree().change_scene_to_file("res://levels/level17.tscn")
+			"17": get_tree().change_scene_to_file("res://levels/level18.tscn")
+			"18": get_tree().change_scene_to_file("res://levels/endscene.tscn")
+			"end": get_tree().quit()

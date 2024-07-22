@@ -24,3 +24,8 @@ func _on_body_entered(body):
 			"level8": get_tree().change_scene_to_file("res://levels/level9.tscn")
 			"level9": get_tree().change_scene_to_file("res://levels/level10.tscn")
 			"level10": get_tree().change_scene_to_file("res://levels/level11.tscn")
+			"level11": get_tree().change_scene_to_file("res://levels/level12.tscn")
+			"level12": get_tree().change_scene_to_file("res://levels/level13.tscn")
+			"level13": get_tree().change_scene_to_file("res://levels/level14.tscn")
+			"level14": get_tree().change_scene_to_file("res://levels/level15.tscn")
+			"level15": get_tree().change_scene_to_file("res://levels/level16.tscn")

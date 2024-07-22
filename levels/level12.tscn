@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://8vw8ymwjrqcu"]
+
+[ext_resource type="PackedScene" uid="uid://cqjeo02m2p5ry" path="res://parts/bg2.tscn" id="1_njmrm"]
+[ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_s77fl"]
+[ext_resource type="PackedScene" uid="uid://s2prmx6o0rdp" path="res://parts/spike.tscn" id="3_dmpw6"]
+[ext_resource type="PackedScene" uid="uid://q68h81as2qqj" path="res://parts/platform_2.tscn" id="4_byd2t"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="5_0qhyi"]
+
+[node name="level12" type="Node2D"]
+
+[node name="bg" parent="." instance=ExtResource("1_njmrm")]
+position = Vector2(-3, 1)
+
+[node name="player" parent="." instance=ExtResource("2_s77fl")]
+position = Vector2(60, 581)
+
+[node name="Spike" parent="." instance=ExtResource("3_dmpw6")]
+position = Vector2(281, 605)
+
+[node name="Spike2" parent="." instance=ExtResource("3_dmpw6")]
+position = Vector2(361, 605)
+
+[node name="Spike3" parent="." instance=ExtResource("3_dmpw6")]
+position = Vector2(434, 605)
+
+[node name="Spike4" parent="." instance=ExtResource("3_dmpw6")]
+position = Vector2(504, 605)
+
+[node name="Spike6" parent="." instance=ExtResource("3_dmpw6")]
+position = Vector2(578, 605)
+
+[node name="Spike7" parent="." instance=ExtResource("3_dmpw6")]
+position = Vector2(745, 604)
+
+[node name="Spike8" parent="." instance=ExtResource("3_dmpw6")]
+position = Vector2(810, 605)
+
+[node name="Spike9" parent="." instance=ExtResource("3_dmpw6")]
+position = Vector2(880, 605)
+
+[node name="platform1" parent="." instance=ExtResource("4_byd2t")]
+position = Vector2(1066, 439)
+
+[node name="platform2" parent="." instance=ExtResource("4_byd2t")]
+position = Vector2(653, 343)
+
+[node name="platform3" parent="." instance=ExtResource("4_byd2t")]
+position = Vector2(93, 299)
+
+[node name="endCoin" parent="." instance=ExtResource("5_0qhyi")]
+position = Vector2(90, 220)

@@ -2,18 +2,21 @@ extends CharacterBody2D
 
 
 const SPEED = 500
-const JUMP_VELOCITY = -650
-var spikeNode
+var JUMP_VELOCITY = -650
 var initialX
 var initialY
+var scene
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
-	spikeNode = get_node("/root/Spike")
+	scene = get_tree().current_scene.name
 	initialX = self.position.x
 	initialY = self.position.y
+	if scene == "level11" or scene == "level12" or scene == "level13":
+		JUMP_VELOCITY = -800
+		gravity = gravity - 150
 
 func _physics_process(delta):
 	if not is_on_floor():

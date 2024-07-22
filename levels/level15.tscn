@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://xroylr0a01ae"]
+
+[ext_resource type="PackedScene" uid="uid://cqjeo02m2p5ry" path="res://parts/bg2.tscn" id="1_ybs8t"]
+[ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_f3aat"]
+[ext_resource type="PackedScene" uid="uid://s2prmx6o0rdp" path="res://parts/spike.tscn" id="3_gxjjp"]
+[ext_resource type="PackedScene" uid="uid://q68h81as2qqj" path="res://parts/platform_2.tscn" id="4_vlq34"]
+[ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="5_5rbxr"]
+
+[node name="15" type="Node2D"]
+
+[node name="bg" parent="." instance=ExtResource("1_ybs8t")]
+position = Vector2(-2, 2)
+
+[node name="player" parent="." instance=ExtResource("2_f3aat")]
+position = Vector2(1092, 582)
+
+[node name="Spike" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(972, 604)
+
+[node name="Spike2" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(901, 604)
+
+[node name="Spike3" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(823, 604)
+
+[node name="Spike4" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(749, 604)
+
+[node name="Spike5" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(676, 604)
+
+[node name="Spike6" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(604, 604)
+
+[node name="Spike9" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(388, 604)
+
+[node name="Spike10" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(322, 604)
+
+[node name="Spike11" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(257, 604)
+
+[node name="platform1" parent="." instance=ExtResource("4_vlq34")]
+position = Vector2(944, 460)
+
+[node name="platform2" parent="." instance=ExtResource("4_vlq34")]
+position = Vector2(610, 350)
+
+[node name="Spike7" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(909, 411)
+
+[node name="Spike8" parent="." instance=ExtResource("3_gxjjp")]
+position = Vector2(573, 301)
+
+[node name="platform3" parent="." instance=ExtResource("4_vlq34")]
+position = Vector2(82, 436)
+
+[node name="platform4" parent="." instance=ExtResource("4_vlq34")]
+position = Vector2(83, 260)
+
+[node name="platform5" parent="." instance=ExtResource("4_vlq34")]
+position = Vector2(355, 139)
+rotation = -0.636555
+
+[node name="endCoin" parent="." instance=ExtResource("5_5rbxr")]
+position = Vector2(331, 73)

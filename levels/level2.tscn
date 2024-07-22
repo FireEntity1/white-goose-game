@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://s2prmx6o0rdp" path="res://parts/spike.tscn" id="4_dkv31"]
 [ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="5_p1ahl"]
 
-[node name="level2" type="Node2D"]
+[node name="2" type="Node2D"]
 
 [node name="bg" parent="." instance=ExtResource("1_f0b2d")]
 position = Vector2(-5, 1)

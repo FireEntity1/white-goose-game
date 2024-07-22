@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbafb5i7kmlpe"]
+
+[ext_resource type="PackedScene" uid="uid://cqjeo02m2p5ry" path="res://parts/bg2.tscn" id="1_2k42s"]
+[ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_iefe0"]
+[ext_resource type="PackedScene" uid="uid://q68h81as2qqj" path="res://parts/platform_2.tscn" id="3_tfpim"]
+[ext_resource type="PackedScene" uid="uid://s2prmx6o0rdp" path="res://parts/spike.tscn" id="4_pya6g"]
+
+[node name="17" type="Node2D"]
+
+[node name="bg" parent="." instance=ExtResource("1_2k42s")]
+position = Vector2(-2, 2)
+
+[node name="player" parent="." instance=ExtResource("2_iefe0")]
+position = Vector2(1099, 587)
+
+[node name="platform1" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(983, 484)
+
+[node name="platform2" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(949, 325)
+
+[node name="platform3" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(977, 180)
+
+[node name="platform4" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(729, 177)
+
+[node name="platform5" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(470, 177)
+
+[node name="platform6" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(513, 340)
+
+[node name="platform7" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(487, 517)
+
+[node name="platform9" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(135, 455)
+
+[node name="platform10" parent="." instance=ExtResource("3_tfpim")]
+position = Vector2(312, 297)
+rotation = 1.44107
+
+[node name="Spike" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(956, 605)
+
+[node name="Spike2" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(882, 605)
+
+[node name="Spike3" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(811, 605)
+
+[node name="Spike4" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(741, 605)
+
+[node name="Spike5" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(675, 605)
+
+[node name="Spike6" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(609, 605)
+
+[node name="Spike7" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(538, 605)
+
+[node name="Spike8" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(470, 605)
+
+[node name="Spike9" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(402, 605)
+
+[node name="Spike10" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(333, 605)
+
+[node name="Spike11" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(263, 605)
+
+[node name="Spike12" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(200, 605)
+
+[node name="Spike13" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(134, 605)
+
+[node name="Spike14" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(67, 605)
+
+[node name="Spike15" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(357, 264)
+rotation = 1.42564
+
+[node name="Spike16" parent="." instance=ExtResource("4_pya6g")]
+position = Vector2(365, 324)
+rotation = 1.42564

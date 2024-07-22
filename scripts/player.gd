@@ -12,9 +12,12 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
 	scene = get_tree().current_scene.name
+	scene = str(scene)
+	scene = int(scene)
 	initialX = self.position.x
 	initialY = self.position.y
-	if scene == "level11" or scene == "level12" or scene == "level13":
+	print(scene)
+	if scene > 10:
 		JUMP_VELOCITY = -800
 		gravity = gravity - 150
 

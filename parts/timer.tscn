@@ -10,9 +10,11 @@ default_font = ExtResource("2_bo3ag")
 script = ExtResource("1_w4hkg")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 978.0
+z_index = 1
+offset_left = 937.0
 offset_top = 31.0
-offset_right = 1018.0
+offset_right = 988.0
 offset_bottom = 54.0
-scale = Vector2(3.90417, 3.20945)
+scale = Vector2(3.64232, 3.51395)
 theme = SubResource("Theme_kxp7k")
+text = "0"

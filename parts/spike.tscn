@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://s2prmx6o0rdp"]
+[gd_scene load_steps=4 format=3 uid="uid://s2prmx6o0rdp"]
 
 [ext_resource type="Texture2D" uid="uid://r3ntn01g3ri5" path="res://assets/spike.png" id="1_bvknb"]
 [ext_resource type="Script" path="res://scripts/spike.gd" id="1_hsl0d"]
+[ext_resource type="AudioStream" uid="uid://dupb6xvi8i1wn" path="res://assets/bonk.mp3" id="3_lfwto"]
 
 [node name="Spike" type="Node2D"]
 scale = Vector2(3.43284, 3.43284)
@@ -14,5 +15,10 @@ polygon = PackedVector2Array(4.07826, 8.15652, -4.95217, 8.15652, 0, -8)
 
 [node name="sprite" type="Sprite2D" parent="area"]
 texture = ExtResource("1_bvknb")
+
+[node name="bonk" type="AudioStreamPlayer2D" parent="."]
+scale = Vector2(1, 1)
+stream = ExtResource("3_lfwto")
+volume_db = 9.838
 
 [connection signal="body_entered" from="area" to="." method="_on_area_body_entered"]

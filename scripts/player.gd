@@ -7,9 +7,11 @@ var initialX
 var initialY
 var scene
 
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var initialGravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var gravity
 
 func _ready():
+	$initialDing.play()
 	scene = get_tree().current_scene.name
 	scene = str(scene)
 	scene = int(scene)
@@ -17,7 +19,8 @@ func _ready():
 	initialY = self.position.y
 	if scene > 10 or get_tree().current_scene.name == "end":
 		JUMP_VELOCITY = -800
-		gravity = gravity - 150
+		initialGravity = initialGravity - 150
+	gravity = initialGravity
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -27,6 +30,11 @@ func _physics_process(delta):
 		$playerSprite.flip_h = true
 	if Input.is_action_just_pressed("ui_left"):
 		$playerSprite.flip_h = false
+
+	if Input.is_action_just_pressed("ui_down") and not is_on_floor():
+		gravity = initialGravity * 10
+	elif is_on_floor():
+		gravity = initialGravity
 
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY

@@ -17,7 +17,6 @@ polygon = PackedVector2Array(4.07826, 8.15652, -4.95217, 8.15652, 0, -8)
 texture = ExtResource("1_bvknb")
 
 [node name="bonk" type="AudioStreamPlayer2D" parent="."]
-scale = Vector2(1, 1)
 stream = ExtResource("3_lfwto")
 volume_db = 9.838
 

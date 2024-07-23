@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bq6d0t4ox683r"]
+
+[ext_resource type="Script" path="res://scripts/timer.gd" id="1_w4hkg"]
+[ext_resource type="FontFile" uid="uid://dfsgaxe136syp" path="res://assets/Silkscreen-Regular.ttf" id="2_bo3ag"]
+
+[sub_resource type="Theme" id="Theme_kxp7k"]
+default_font = ExtResource("2_bo3ag")
+
+[node name="Timer" type="Node2D"]
+script = ExtResource("1_w4hkg")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 978.0
+offset_top = 31.0
+offset_right = 1018.0
+offset_bottom = 54.0
+scale = Vector2(3.90417, 3.20945)
+theme = SubResource("Theme_kxp7k")

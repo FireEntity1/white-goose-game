@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://comcs4xs7ik2i"
-path="res://.godot/imported/goose.png-72daf264b05b1099965d4f0f009d11a6.ctex"
+uid="uid://dq2oytu6imcg4"
+path="res://.godot/imported/levelBG.png-bf11e76f2db2602a819f1203296ea40f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/goose.png"
-dest_files=["res://.godot/imported/goose.png-72daf264b05b1099965d4f0f009d11a6.ctex"]
+source_file="res://assets/levelBG.png"
+dest_files=["res://.godot/imported/levelBG.png-bf11e76f2db2602a819f1203296ea40f.ctex"]
 
 [params]
 

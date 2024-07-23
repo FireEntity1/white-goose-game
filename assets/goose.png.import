@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b413dkks04k7o"
-path="res://.godot/imported/platform1.png-2435df70d2c753b811676b761032a22c.ctex"
+uid="uid://comcs4xs7ik2i"
+path="res://.godot/imported/goose.png-66f43fae33e56829ddaa1c459c1c2034.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/platform1.png"
-dest_files=["res://.godot/imported/platform1.png-2435df70d2c753b811676b761032a22c.ctex"]
+source_file="res://assets/goose.png"
+dest_files=["res://.godot/imported/goose.png-66f43fae33e56829ddaa1c459c1c2034.ctex"]
 
 [params]
 

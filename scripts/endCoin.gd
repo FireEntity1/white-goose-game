@@ -6,9 +6,6 @@ func _ready():
 	currentScene = get_tree().current_scene.name
 	print(currentScene)
 
-func _process(delta):
-	pass
-
 
 func _on_body_entered(body):
 	if body is CharacterBody2D:

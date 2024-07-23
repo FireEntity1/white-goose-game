@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://dnabijsy4nmt8"]
 
-[ext_resource type="Texture2D" uid="uid://dj0awwhowrg56" path="res://sprites/title.png" id="1_01xma"]
+[ext_resource type="Texture2D" uid="uid://dj0awwhowrg56" path="res://assets/title.png" id="1_01xma"]
 [ext_resource type="PackedScene" uid="uid://defxlh8t1fmo8" path="res://parts/player.tscn" id="2_x5kkq"]
-[ext_resource type="FontFile" uid="uid://dfsgaxe136syp" path="res://sprites/Silkscreen-Regular.ttf" id="3_uoewp"]
+[ext_resource type="FontFile" uid="uid://dfsgaxe136syp" path="res://assets/Silkscreen-Regular.ttf" id="3_uoewp"]
 [ext_resource type="PackedScene" uid="uid://co1h1e5n77dwi" path="res://parts/end_coin.tscn" id="4_op0ov"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7d34b"]

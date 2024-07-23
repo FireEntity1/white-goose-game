@@ -18,6 +18,8 @@ boot_splash/show_image=false
 [autoload]
 
 Spike="*res://scripts/spike.gd"
+MusicPlayer="*res://parts/musicPlayer.tscn"
+GlobalTimer="*res://parts/timer.tscn"
 
 [display]
 
